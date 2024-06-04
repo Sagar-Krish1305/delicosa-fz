@@ -6,17 +6,17 @@ function ProductCard({ imageUrl, name }) {
     card: {
       border: '1px solid #438569',
       borderRadius: '10px',
-      margin: '10px',
-      padding: '20px', // decreased padding to 20px
-      width: '250px', // decreased width to 250px
+      padding: '10px',
+      width: '200px',
       backgroundColor: '#226B43',
+      textAlign: 'center', // Ensure text is centered
     },
     productImage: {
       borderRadius: '10px',
       width: '100%',
-      height: '200px', // decreased height to 200px
+      height: '200px', // Fixed height
       objectFit: 'cover',
-      marginBottom: '20px',
+      marginBottom: '10px', // Add margin to separate image from text
     },
   };
 
