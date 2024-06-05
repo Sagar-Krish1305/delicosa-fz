@@ -87,7 +87,7 @@ const ProductPage = ({ selected }) => {
                 </Row>
               ))}
             </div>
-            <Col xs={1} className="d-none d-md-block vertical-divider" style={styles.verticalDivider} />
+            {/* <Col xs={1} className="d-none d-md-block vertical-divider" style={styles.verticalDivider} /> */}
           </Col>
           <Col xs={12} md={9}>
             <Row className="mt-4 justify-content-center" style={styles.scrollable}>
