@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
@@ -13,6 +14,10 @@ const Navbar = () => {
     <nav className={`navbar ${menuOpen ? 'menu-open' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-links">
+
+          <NavLink to="/" className={({isActive})=>`hover:text-gray-200 ${isActive ? "text-white" : "text-black"}`} >
+                helo
+          </NavLink>
           <a href="/">Home</a>
           <a href="/products">Products</a>
           <a href="/about">About Us</a>
