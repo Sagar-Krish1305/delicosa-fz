@@ -1,64 +1,8 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import ProductCard from '../../Components/ProductCard/ProductCard';
-import ProductPageIntroduction from '../../Components/Our_Product_Introduction/ProductIntroduction';
+import React from 'react';
+
+import AllProducts from '../../Components/ProductCard/AllProducts';
 
 const ProductPage = ({ selected }) => {
-  const [selectedCategory, setSelectedCategory] = useState(selected ?? 'Cereals');
-  const productCards = [
-    // ... (your product cards array)
-    { category: 'Yellow', imageUrl: 'https://placehold.co/250x250', name: 'Name' },
-    { category: 'Yellow', imageUrl: "https://placehold.co/250x250", name: 'Name' },
-    { category: 'Yellow', imageUrl: "https://placehold.co/250x250", name: 'Name' },
-    { category: 'Yellow', imageUrl: "https://placehold.co/350x250", name: 'Name' },
-    { category: 'Yellow', imageUrl: "https://placehold.co/350x250", name: 'Name' },
-    { category: 'Yellow', imageUrl: "https://placehold.co/350x250", name: 'Name' },
-    { category: 'Yellow', imageUrl: "https://placehold.co/350x250", name: 'Name' },
-    { category: 'Yellow', imageUrl: "https://placehold.co/350x250", name: 'Name' },
-    { category: 'Yellow', imageUrl: "https://placehold.co/350x250", name: 'Name' },
-  ];
-
-  const categoryCounts = productCards.reduce((acc, product) => {
-    acc[product.category] = (acc[product.category] || 0) + 1;
-    return acc;
-  }, {});
-
-  const categories = Object.keys(categoryCounts);
-
-  const filteredProducts = productCards.filter((product) => product.category === selectedCategory);
-
-  const styles = {
-    container: {
-      padding: '20px',
-      height: '100%',
-    },
-    categoryCard: {
-      borderRadius: '10px',
-      width: '100%'
-    },
-    categoryButton: {
-      color: '#fff',
-      borderRadius: '5px',
-      border: 'none',
-      padding: '5px 10px',
-      width: '100%',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-    },
-    activeCategoryButton: {
-      color: '#fff',
-    },
-    scrollable: {
-      maxHeight: '70vh',
-      overflowY: 'auto',
-    },
-    verticalDivider: {
-      border: '1px solid #fff',
-      height: '100%',
-      width: '1px'
-    },
-  };
 
   return (
     <Container>
@@ -87,7 +31,7 @@ const ProductPage = ({ selected }) => {
                 </Row>
               ))}
             </div>
-            {/* <Col xs={1} className="d-none d-md-block vertical-divider" style={styles.verticalDivider} /> */}
+            <Col xs={1} className="d-none d-md-block vertical-divider" style={styles.verticalDivider} />
           </Col>
           <Col xs={12} md={9}>
             <Row className="mt-4 justify-content-center" style={styles.scrollable}>
