@@ -4,15 +4,14 @@ import Navbar from '../src/Components/Navigation_Bar/Navbar';
 import Footer from '../src/Components/Footer/Footer';
 
 import CartPage from './Components/CartPage/CartPage';
+import { OurProductsPage } from './Pages';
 const App = () => {
   return (
     <div>
       {/* <Navbar />
 
       <Footer /> */}
-      <Navbar />
-      <CartPage/>
-      <Footer /> 
+      <OurProductsPage/>
     </div>
   );
 };
