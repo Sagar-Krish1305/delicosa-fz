@@ -1,15 +1,16 @@
 import React from "react";
+import { Card } from 'react-bootstrap';
 
 function Achievement({ title, value }) {
   return (
-    <div>
-      <div className="text-center">
+    <Card className="text-center">
+      <Card.Body>
         <div>
-          <span className="border-b-2 ">{value}+</span>
+          <h2 className="border-bottom pb-3">{value}+</h2>
         </div>
-        <p className="w-52">{title}</p>
-      </div>
-    </div>
+        <Card.Text className="w-100">{title}</Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 
