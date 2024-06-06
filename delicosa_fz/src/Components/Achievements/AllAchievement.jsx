@@ -1,4 +1,6 @@
+import React from 'react';
 import Achievement from './Achievement';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const achievements = [
   { title: 'Projects Completed', value: 89 },
@@ -8,14 +10,16 @@ const achievements = [
 
 const AllAchievement = () => {
   return (
-    <div className='w-auto m-4'>
-      <h2 className="text-4xl font-bold mb-4 text-center text-white ">Our Achievements</h2>
-      <div className='flex flex-wrap justify-center gap-10 px-10 p-5 text-2xl  '>
-        {achievements.map((achievement) => (
-          <Achievement key={achievement.title} {...achievement} />
+    <Container className="mt-4">
+      <h2 className="text-center text-white display-4 fw-bold mb-4">Our Achievements</h2>
+      <Row className="justify-content-center gap-4 px-5">
+        {achievements.map((achievement, index) => (
+          <Col md={4} key={index}>
+            <Achievement {...achievement} />
+          </Col>
         ))}
-      </div>
-    </div>
+      </Row>
+    </Container>
   );
 };
 

@@ -1,7 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '../src/Components/Navigation_Bar/Navbar';
-
 import Footer from '../src/Components/Footer/Footer';
 
 import CartPage from './Components/CartPage/CartPage';

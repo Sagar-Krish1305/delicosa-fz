@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 // src/index.js or src/App.js
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'; // Import Tailwind after Bootstrap
 
 import { RouterProvider , Route  , createBrowserRouter , createRoutesFromElements} from 'react-router-dom'
