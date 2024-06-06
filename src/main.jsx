@@ -6,7 +6,6 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css"
 
-
 import { RouterProvider , Route  , createBrowserRouter , createRoutesFromElements} from 'react-router-dom'
 import Layout from "./Components/Layout.jsx"
 

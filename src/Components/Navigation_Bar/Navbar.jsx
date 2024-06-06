@@ -19,6 +19,9 @@ const Navbar = () => {
           <a href="/products">Products</a>
           <a href="/about">About Us</a>
           <a href="/contact">Contact Us</a>
+          <NavLink to={"/some"}>
+              fd 
+          </NavLink>
         </div>
         <div className="navvbar-actions">
           <a href="/cart" id='cartlink'>
