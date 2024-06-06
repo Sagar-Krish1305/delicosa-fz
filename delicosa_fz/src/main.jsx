@@ -8,6 +8,7 @@ import './index.css'; // Import Tailwind after Bootstrap
 import { RouterProvider , Route  , createBrowserRouter , createRoutesFromElements} from 'react-router-dom'
 import Layout from "./Components/Layout.jsx"
 import {HomePage , OurProductsPage , MyCartPage} from "./Pages"
+import AboutUsPage from './Pages/About Us/AboutUsPage.jsx';
 const router = createBrowserRouter(
   
   createRoutesFromElements(
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
        <Route path='' element={<HomePage/>}/>
        <Route path='products' element={<OurProductsPage/>}/>
        <Route path='cart' element={<MyCartPage/>}/>
+       <Route path='about' element={<AboutUsPage/>}/>
     </Route>
   )
 )
